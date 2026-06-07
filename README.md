@@ -189,6 +189,12 @@ Possible improvements for future versions:
 ---
 
 ## Gallery
-/images/pcb.png
-/images/plate.png
-/images/3d-view.png
+
+### PCB
+![Cosmoboard PCB](images/PCB.png)
+
+### FR4 Plate
+![Cosmoboard Plate](images/Plate.png)
+
+### 3D View
+![Cosmoboard 3D View](images/3D.png)
