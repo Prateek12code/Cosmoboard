@@ -189,7 +189,6 @@ Possible improvements for future versions:
 ---
 
 ## Gallery
-```text
 /images/pcb.png
 /images/plate.png
 /images/3d-view.png
