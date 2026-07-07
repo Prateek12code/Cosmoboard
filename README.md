@@ -1,80 +1,103 @@
 # Cosmoboard
 
-Cosmoboard is a custom 75% mechanical keyboard project with an open-top design, MX hot-swap support, custom PCB, 3D printed case, and 3D printed switch plate.
+**Cosmoboard** is a custom 75% mechanical keyboard with an open-top floating-switch design, custom PCB, MX hot-swap support, RGB lighting, and a 3D printed case and plate.
 
-The goal of Cosmoboard V1 is simple: build a working custom keyboard from scratch while learning real PCB design, keyboard matrices, routing, stabilizers, manufacturing, and case design.
+It is designed as a clean V1 keyboard build: simple enough to manufacture, but still custom enough to learn PCB design, keyboard matrices, routing, stabilizer placement, case design, and real hardware assembly.
 
-Type your ideas into orbit, one key at a time.
+> Type your ideas into orbit, one key at a time.
+
+---
+
+## Gallery
+
+| PCB | Plate | 3D View |
+|---|---|---|
+| ![PCB](images/PCB.png) | ![Plate](images/Plate.png) | ![3D View](images/3D.png) |
+
+---
 
 ## Why I Made This
 
-I wanted to design and build my own keyboard instead of only using prebuilt ones. Cosmoboard started as a way to learn how custom keyboards are actually made, from the PCB and matrix to the case, plate, switches, stabilizers, and final assembly.
+I wanted to design and build my own keyboard from scratch instead of only using prebuilt keyboards.
 
-The first version had a more expensive FR4 plate plan, but I changed it to a 3D printed plate and case to reduce cost and make the project easier to prototype.
+Cosmoboard started as a learning project, but it slowly became a full custom keyboard design. Through this project, I worked on the keyboard layout, PCB routing, diode matrix, hot-swap sockets, stabilizer placement, case design, plate design, BOM planning, and manufacturing decisions.
 
-V1 is focused on making a keyboard that works, looks clean, and teaches me enough to build a better version later.
+The first plan used an FR4 plate, but I later changed it to a **3D printed plate** to reduce the total cost and make the project easier to prototype.
+
+The goal of V1 is simple: make a keyboard that works, looks clean, and teaches me enough to build a better version later.
+
+---
 
 ## Features
 
-- 75% custom keyboard layout
+- Custom 75% keyboard layout
 - MX-style mechanical switches
 - MX hot-swap sockets
 - 1N4148W SOD-123 diodes
 - PCB-mount stabilizers
-- Addressable RGB LEDs
-- Custom PCB
+- WS2812B 5050 RGB LEDs
+- Custom black PCB
 - 3D printed switch plate
 - 3D printed case
-- Open-top / floating-switch style
+- Open-top floating-switch style
 - Split case design for easier 3D printing
+- Designed for real manufacturing and assembly
+
+---
 
 ## Hardware Overview
 
-| Part | Details |
+| Part | Selected Item |
 |---|---|
-| PCB | Custom Cosmoboard PCB ordered from JLCPCB |
+| PCB | Custom Cosmoboard PCB from JLCPCB |
 | Switches | HMX Macchiato Linear Switches |
-| Sockets | Kailh MX hot-swap sockets |
-| Diodes | 1N4148W SOD-123 diodes |
+| Sockets | Kailh MX Hot-swap Sockets |
+| Diodes | 1N4148W SOD-123 Diodes |
 | Keycaps | Cherry Colour PBT Keycap Set |
-| Stabilizers | Glorious GOAT PCB-mount stabilizers |
-| RGB | Worldsemi WS2812B 5050 addressable RGB LEDs |
-| Plate | 3D printed plate |
-| Case | 3D printed case |
+| Stabilizers | Glorious GOAT PCB-mount Stabilizers |
+| RGB | Worldsemi WS2812B 5050 LEDs |
+| Plate | 3D Printed Plate |
+| Case | 3D Printed Split Case |
 | Filament | Numakers PLA+ Clear Transparent |
+
+---
 
 ## PCB Details
 
 | Item | Value |
 |---|---|
-| PCB name | Cosmoboard-PCB_Y12 |
-| PCB size | Around 361.6 mm wide |
-| PCB thickness | 1.6 mm |
-| PCB color | Black |
-| Mounting | PCB screw holes |
-| Switch type | MX-style |
-| Socket type | Kailh MX hot-swap |
-| Plate type | 3D printed plate |
-| Case type | 3D printed split case |
+| PCB Name | Cosmoboard-PCB_Y12 |
+| PCB Width | Around 361.6 mm |
+| PCB Thickness | 1.6 mm |
+| PCB Color | Black |
+| Switch Type | MX-style |
+| Socket Type | Kailh MX Hot-swap |
+| Diode Package | SOD-123 |
+| Plate Type | 3D Printed |
+| Case Type | Split 3D Printed Case |
 
-## Case Design
+---
 
-The keyboard is larger than a normal Bambu Lab A1 build plate, so the case is designed to be split into printable parts.
+## Case And Plate
+
+The keyboard is wider than a normal Bambu Lab A1 build plate, so the case and plate are designed to be split into printable parts.
 
 The case plan includes:
 
 - Split 3D printed frame
 - 3D printed switch plate
 - Internal support ribs to reduce flex
-- Screw mounting through the PCB
+- PCB screw mounting
 - USB cutout
-- Open-top look
+- Open-top floating-switch look
 
-The FR4 plate was removed from the project plan to reduce cost. A 3D printed plate is now used instead.
+The FR4 plate was removed from the plan to reduce cost. The keyboard now uses a 3D printed plate and case.
 
-## Bill of Materials
+---
 
-The updated BOM is available in:
+## Bill Of Materials
+
+The updated BOM is stored in:
 
 ```text
 production/BOM.csv
