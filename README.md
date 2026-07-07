@@ -1,111 +1,80 @@
 # Cosmoboard
 
-**Cosmoboard** is a custom 75% mechanical keyboard with a floating-switch, open-top design and a cosmic-themed PCB/FR4 plate.
+Cosmoboard is a custom 75% mechanical keyboard project with an open-top design, MX hot-swap support, custom PCB, 3D printed case, and 3D printed switch plate.
 
-It uses MX switches, MX hot-swap sockets, an FR4 plate, plate-mount stabilizers, one rotary encoder, bottom RGB underglow, and a WeAct RP2350A controller module.
+The goal of Cosmoboard V1 is simple: build a working custom keyboard from scratch while learning real PCB design, keyboard matrices, routing, stabilizers, manufacturing, and case design.
 
-> Type your ideas into orbit, one key at a time.
-
----
-
-## Gallery
-
-| PCB | Plate | 3D View |
-|---|---|---|
-| ![PCB](images/PCB.png) | ![Plate](images/Plate.png) | ![3D View](images/3D.png) |
-
----
+Type your ideas into orbit, one key at a time.
 
 ## Why I Made This
 
-I wanted to design and build my own keyboard from scratch instead of only using prebuilt ones. Cosmoboard started as a way to learn real PCB design, keyboard matrices, routing, plates, stabilizers, and manufacturing.
+I wanted to design and build my own keyboard instead of only using prebuilt ones. Cosmoboard started as a way to learn how custom keyboards are actually made, from the PCB and matrix to the case, plate, switches, stabilizers, and final assembly.
 
-The first idea was to use a bare microcontroller chip, but I later changed the scope to use a ready-made RP2350A controller module. This made the project more realistic for V1 by reducing risk around USB, power, boot/reset, and MCU routing.
+The first version had a more expensive FR4 plate plan, but I changed it to a 3D printed plate and case to reduce cost and make the project easier to prototype.
 
-The goal of V1 is simple: make a keyboard that works, looks good, and teaches me enough to build a better version later.
-
----
+V1 is focused on making a keyboard that works, looks clean, and teaches me enough to build a better version later.
 
 ## Features
 
-- 75% keyboard layout
-- MX mechanical switches
+- 75% custom keyboard layout
+- MX-style mechanical switches
 - MX hot-swap sockets
-- FR4 switch plate
-- Plate-mount stabilizers
-- One rotary encoder
-- 16 bottom RGB underglow LEDs
-- WeAct Studio RP2350A_V20 controller module
-- USB-C through the controller module
-- Open-top / floating-switch design
-- Custom silkscreen art
-- Bottom tray/base case concept
-
----
+- 1N4148W SOD-123 diodes
+- PCB-mount stabilizers
+- Addressable RGB LEDs
+- Custom PCB
+- 3D printed switch plate
+- 3D printed case
+- Open-top / floating-switch style
+- Split case design for easier 3D printing
 
 ## Hardware Overview
 
 | Part | Details |
 |---|---|
-| Controller | WeAct Studio RP2350A_V20 |
-| Switches | MX-style mechanical switches |
+| PCB | Custom Cosmoboard PCB ordered from JLCPCB |
+| Switches | HMX Macchiato Linear Switches |
 | Sockets | Kailh MX hot-swap sockets |
-| Plate | 1.6 mm FR4 plate |
-| Stabilizers | Plate-mount stabilizers |
-| RGB | 16 addressable RGB LEDs |
-| Encoder | EC11-style rotary encoder |
-| Connection | USB-C |
-| Case | Bottom tray / open-top style |
-
----
+| Diodes | 1N4148W SOD-123 diodes |
+| Keycaps | Cherry Colour PBT Keycap Set |
+| Stabilizers | Glorious GOAT PCB-mount stabilizers |
+| RGB | Worldsemi WS2812B 5050 addressable RGB LEDs |
+| Plate | 3D printed plate |
+| Case | 3D printed case |
+| Filament | Numakers PLA+ Clear Transparent |
 
 ## PCB Details
 
 | Item | Value |
 |---|---|
-| PCB size | Around 354 mm × 134 mm |
-| Matrix | 6 × 15 |
-| Main PCB thickness | 1.6 mm |
-| Plate thickness | 1.6 mm FR4 |
-| Mounting holes | 9 |
-| Controller | Pico-compatible RP2350A module |
-| Style | Floating switch / open-top |
+| PCB name | Cosmoboard-PCB_Y12 |
+| PCB size | Around 361.6 mm wide |
+| PCB thickness | 1.6 mm |
+| PCB color | Black |
+| Mounting | PCB screw holes |
+| Switch type | MX-style |
+| Socket type | Kailh MX hot-swap |
+| Plate type | 3D printed plate |
+| Case type | 3D printed split case |
 
----
+## Case Design
 
-## Current Status
+The keyboard is larger than a normal Bambu Lab A1 build plate, so the case is designed to be split into printable parts.
 
-- [x] Layout finalized
-- [x] Schematic completed
-- [x] Footprints assigned
-- [x] Main PCB routed
-- [x] Encoder routed
-- [x] RGB routed
-- [x] Edge.Cuts completed
-- [x] Mounting holes added
-- [x] FR4 plate completed
-- [x] Silkscreen art added
-- [x] BOM created
-- [ ] PCB ordered
-- [ ] Components soldered
-- [ ] Firmware written
-- [ ] Bottom tray designed
-- [ ] Final keyboard assembled
+The case plan includes:
 
----
+- Split 3D printed frame
+- 3D printed switch plate
+- Internal support ribs to reduce flex
+- Screw mounting through the PCB
+- USB cutout
+- Open-top look
 
-## Repository Structure
+The FR4 plate was removed from the project plan to reduce cost. A 3D printed plate is now used instead.
+
+## Bill of Materials
+
+The updated BOM is available in:
 
 ```text
-Cosmoboard/
-├─ README.md
-├─ BOM.csv
-├─ images/
-│  ├─ PCB.png
-│  ├─ Plate.png
-│  └─ 3D.png
-├─ hardware/
-│  ├─ main-pcb/
-│  └─ plate/
-├─ firmware/
-└─ case/
+production/BOM.csv
